@@ -1,0 +1,33 @@
+/* pages/user/info.wxss */
+view {
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+.last {
+  margin-bottom: 0;
+}
+view.main {
+  /* border: 2px solid #999;
+  border-radius: 5px;
+  padding: 10px;
+  box-sizing: border-box; */
+}
+.input {
+  margin-top: 20px;
+}
+.input view {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  margin-bottom: 10px;
+}
+.border {
+  border: 2px solid #999;
+  border-radius: 2px;
+  width: 65%;
+  margin-right: 20px;
+}
+button {
+  width: 90%;
+  margin-top: 20px;
+}

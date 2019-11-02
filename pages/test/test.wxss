@@ -1,0 +1,16 @@
+/* pages/test/test.wxss */
+.circle {
+  width: 60vw;
+  height: 60vw;
+  margin: 100rpx auto;
+  background-color: red;
+  border-radius: 50%;
+  position: reslative;
+}
+.skewX {
+  width: 50%; 
+  height: 50%;
+  background-color: blue; 
+  transform: skewX(60deg);
+  transform-origin: 100% 100%;
+}

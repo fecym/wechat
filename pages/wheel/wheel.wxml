@@ -1,0 +1,53 @@
+<!--pages/wheel/wheel.wxml-->
+
+<view class='container'>
+  <view class='header'>
+    <text class='goback' bindtap='goback'></text>
+    <text class='wheel-titile'>大转盘</text>
+  </view>
+  <view class='main'>
+    <image src='../../images/games/wheel/wheel.png' class='_title'></image>
+    <view class='wheel'>
+      <view class='canvas-container'>
+        <view animation="{{animationData}}" class='canvas-content'>
+          <view class='yuan'>
+            <!-- 线条 -->
+            <view class="canvas-line">
+              <view class="canvas-litem" wx:for="{{list}}" wx:key="unique" style="-webkit-transform: rotate({{item.lineTurn}});transform: rotate({{item.lineTurn}})">
+              </view>
+            </view>
+            <!-- 线条结束 文字 -->
+            <view class="canvas-list">
+              <view class="canvas-item" wx:for="{{list}}" wx:key="unique">
+                  <view class="canvas-item-text" style="-webkit-transform: rotate({{item.turn}});transform: rotate({{item.turn}})">{{item.prize}}</view>
+              </view>
+              <!-- 文字结束 -->
+            </view>
+          </view>
+        </view>
+          <!-- 边框 -->
+          <image src='../../images/games/kuang.png' class='kuang'></image> 
+          <!-- 开始按钮 -->
+          <view class='begin' bindtap='begin'></view> 
+          <!-- 转盘阴影 -->
+          <image src='../../images/games/wheel/shadow.png' class='wheel-shadow'></image>
+      </view>
+    </view>
+  </view>
+  <view class='footer'>
+    <!-- 抽奖介绍 -->
+    <view class='game-intro'>
+      <view class='prizeNum'>你还有<text>{{prizeNum}}</text>次抽奖机会</view>
+      <view class='intro'>
+        <view class='_intro'>
+          <view class='title'>{{intro.title}}：</view>
+          <view class='content'>{{intro.content}}</view>
+        </view>
+        <view class='_intro'>
+          <view class='title'>{{rule.title}}：</view>
+          <view class='content'>{{rule.content}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

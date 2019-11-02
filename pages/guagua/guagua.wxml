@@ -1,0 +1,35 @@
+<!--pages/guagua/guagua.wxml-->
+<view class='container'>
+<!-- 头部逻辑 -->
+  <view class='header'>
+      <text class='goback' bindtap='goback'></text>
+      <text class='wheel-titile'>刮刮乐</text>
+  </view>
+  <!-- 主内容 -->
+  <view class='main'>
+    <image src='../../images/games/gua/gua.png' class='_title'></image>
+    <!-- canvas画图 -->
+    <view class='gua-main'>
+      <image src='../../images/games/gua/刮奖区.png' hidden id='gua-bg'></image>
+      <view class='content-text'>一等奖哦</view>
+      <canvas class='gua' canvas-id='gua' bindtouchstart='touchstart' bindtouchmove='touchmove'></canvas>
+    </view>
+  </view>
+  <!-- 底部 -->
+  <view class='footer'>
+    <!-- 抽奖介绍 -->
+    <view class='game-intro'>
+      <view class='prizeNum'>你还有<text>{{prizeNum}}</text>次抽奖机会</view>
+      <view class='intro'>
+        <view class='_intro'>
+          <view class='title'>{{intro.title}}：</view>
+          <view class='content'>{{intro.content}}</view>
+        </view>
+        <view class='_intro'>
+          <view class='title'>{{rule.title}}：</view>
+          <view class='content'>{{rule.content}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

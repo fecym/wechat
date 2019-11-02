@@ -1,0 +1,21 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image> 
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+     </block> 
+  </view>
+  <dialog></dialog>
+  <view class='navigator'>
+    <navigator url='../wheel/wheel' open-type='switchTab'>游戏 -- 大转盘</navigator>
+    <navigator url='/pages/shake/shake' open-type='switchTab'>游戏 -- 摇一摇</navigator>
+    <!-- <navigator url='/pages/guagua/guagua' open-type='switchTab'>游戏 -- 刮刮乐</navigator> -->
+     <navigator url='/pages/test/test' open-type='navigate'>游戏 -- 测试页</navigator> 
+  </view> 
+   <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view> 
+</view>
+

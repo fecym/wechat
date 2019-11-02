@@ -1,0 +1,22 @@
+<!--pages/user/info.wxml-->
+<view class="main" wx:if="{{userInfo.username}}">
+  <view>登录名称：{{userInfo.username}}</view>
+  <view>用户昵称：{{userInfo.nickname}}</view>
+  <view>真实姓名：{{userInfo.realname}}</view>
+  <view>用户性别：{{userInfo.sex === 0 ? '保密' : (userInfo.sex === 1 ? '男' : '女') }}</view>
+  <view>手机号码：{{userInfo.phoneNum}}</view>
+  <view>电子邮箱：{{userInfo.email}}</view>
+  <view class="last">创建时间：{{userInfo.create_time}}</view>
+</view>
+<view class="main" wx:if="{{errorMsg}}">
+  <view>{{errorMsg}}</view>
+</view>
+<view class="input">
+  <view>
+    登录名称：<input class="border" bindinput="bindUsername" type="text" placeholder="请输入用户名"></input>
+  </view>
+  <view>
+    登录密码：<input class="border" bindinput="bindPassword" type="text" placeholder="请输入密码"></input>
+  </view>
+  <button type="primary" bindtap="login">登录</button>
+</view>

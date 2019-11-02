@@ -1,0 +1,22 @@
+/* pages/login/info.wxss */
+
+.info {
+  /* margin-bottom:16rpx; */
+  padding-left: 8px;
+  border: 1px solid #999;
+  line-height: 80rpx;
+}
+
+.form input {
+  border: 1px solid #999;
+  margin: 8px;
+  width: 70vw;
+}
+.form view {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+button {
+  margin: 0 10px;
+}

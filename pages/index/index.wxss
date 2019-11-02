@@ -1,0 +1,36 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+   align-items: center; 
+}
+
+.userinfo-avatar {
+   width: 128rpx; 
+   height: 128rpx; 
+   border-radius: 50%; 
+}
+
+.userinfo-nickname {
+   color: #aaa; 
+}
+
+.navigator {
+  margin-top: 50px;
+}
+.navigator navigator {
+  margin-bottom: 5px;
+}
+.usermotto {
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* 不要两端对齐了 */
+  justify-content: space-around;
+  padding: 200rpx 0 0;
+  box-sizing: border-box;
+  /* 因为高度给了全屏的高度，所以上面有padding造成了把一个元素给挤掉的问题  */
+  height: 100vh;
+}

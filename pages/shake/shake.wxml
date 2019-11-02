@@ -1,0 +1,35 @@
+<!--pages/yao/yao.wxml-->
+<view class='container'>
+<!-- 头部逻辑 -->
+  <view class='header'>
+      <text class='goback' bindtap='goback'></text>
+      <text class='wheel-titile'>摇一摇</text>
+  </view>
+  <!-- 主内容 -->
+  <view class='main'>
+    <image src='../../images/games/shake/shake.png' class='_title'></image>
+    <view class='shake' bindtap='tap'>
+      <image src='../../images/games/kuang.png' class='kuang'></image>   
+      <view class='top' style="transition: all ease 2s; transform: translateY({{topNum}}rpx)"></view>
+      <view class='bottom' style="transition: all ease 2s; transform: translateY({{botNum}}rpx)"></view>
+      <view class='inside'></view>
+    </view>
+  </view>
+  <!-- 底部 -->
+  <view class='footer'>
+    <!-- 抽奖介绍 -->
+    <view class='game-intro'>
+      <view class='prizeNum'>你还有<text>{{prizeNum}}</text>次抽奖机会</view>
+      <view class='intro'>
+        <view class='_intro'>
+          <view class='title'>{{intro.title}}：</view>
+          <view class='content'>{{intro.content}}</view>
+        </view>
+        <view class='_intro'>
+          <view class='title'>{{rule.title}}：</view>
+          <view class='content'>{{rule.content}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

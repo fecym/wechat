@@ -1,0 +1,45 @@
+{
+  "pages": [
+    "pages/login/info",
+    "pages/user/info",
+    "pages/index/index",
+    "pages/shake/shake",
+    "pages/logs/logs",
+    "pages/wheel/wheel",
+    "pages/test/test"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#8C0EE3",
+    "navigationBarTitleText": "抽奖小游戏",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/login/info",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/wheel/wheel",
+        "text": "大转盘"
+      },
+      {
+        "pagePath": "pages/shake/shake",
+        "text": "摇一摇"
+      },
+      {
+        "pagePath": "pages/user/info",
+        "text": "用户信息"
+      }
+    ],
+    "backgroundColor": "#fff",
+    "color": "white"
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": false,
+  "sitemapLocation": "sitemap.json"
+}

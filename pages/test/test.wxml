@@ -1,0 +1,11 @@
+<!--pages/test/test.wxml-->
+<!-- <text>pages/test/test.wxml</text>
+<view class='circle'>
+   <view class='skewX'></view> 
+   <button size='mini' type='primary' open-type='getPhoneNumber'>定位</button>
+</view> -->
+<view>
+  <button type='primary' size='mini' bindtap='show'>显示</button>
+  <dialog id="dialog"></dialog>
+</view>
+

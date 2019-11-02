@@ -1,0 +1,13 @@
+<!--components/dialog/dialog.wxml-->
+<!-- 自定义模态框测试 -->
+<view class='dialog' hidden="{{!isShow}}">
+  <view class='content'>
+    <view class='title'>中奖提示</view>
+    <image src='{{prizeImg}}' class='prizeImg'></image>
+    <view class='prize-text'>
+      <text>{{prizeText1}}</text>
+      <text>{{prizeText2}}</text>
+    </view>
+    <view class=''></view>
+  </view>
+</view>
